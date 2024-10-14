@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0 15px; 
+}
+
+.container {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; 
+    box-sizing: border-box; 
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #6a11cb;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2575fc;
+}
+
+#message {
+    text-align: center;
+    margin-top: 10px;
+    color: green;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    input, button {
+        padding: 8px;
+    }
+}
+small {
+    display: block;
+    margin-top: 5px;
+    color: #888; 
+}
+#passwordFeedback {
+    margin-top: 5px;
+    font-size: 0.9em; 
+}
+#confirmEmailFeedback {
+    margin-top: 5px;
+    font-size: 0.9em;
+}
